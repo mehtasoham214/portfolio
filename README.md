@@ -1,4 +1,4 @@
-# portfolio
+# <img src="./portfolio/public/images/SM_Logo.png" alt="HTML Icon" width="50px"> <br>Portfolio
 
 Explore my portfolio showcasing career milestones and achievements. The portfolio is a single-page application (SPA) that is responsive and mobile-friendly.
 
