@@ -46,6 +46,16 @@ Thank you for your patience.
             <br>MERN Stack
         </td>
     </tr>
+    <tr>
+        <td align="center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Sanity-logo-svg.svg/250px-Sanity-logo-svg.svg.png" alt="MongoDB Icon" width="50px">
+            <br>Sanity.io
+        </td>
+        <td align="center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/800px-Sass_Logo_Color.svg.png" alt="Node.js Icon" width="50px">
+            <br>SCSS
+        </td>
+    </tr>
 </table>
 
 ## Implementation
