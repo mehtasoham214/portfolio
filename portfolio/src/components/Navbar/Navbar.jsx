@@ -4,10 +4,18 @@ import { motion } from 'framer-motion';
 
 import { images } from '../../constants';
 import './Navbar.scss';
+import resumePdf from '../../assets/pdf/Soham_Mehta_Resume.pdf';
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
-
+  const handleDownloadResume = () => {
+    const link = document.createElement('a');
+    link.href = resumePdf;
+    link.download = 'Soham_Mehta_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
@@ -22,6 +30,9 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+        <div className='app__button-group'>
+        <button onClick={handleDownloadResume}>Download Resume</button>
+      </div>
       </div>
 
       <div className="app__navbar-menu">
@@ -44,6 +55,9 @@ const Navbar = () => {
             </ul>
           </motion.div>
         )}
+        <div className='app__button-group'>
+          <button onClick={handleDownloadResume}>Download Resume</button>
+        </div>
       </div>
     </nav>
   );

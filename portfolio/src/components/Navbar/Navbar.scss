@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(26, 26, 26,0.9);
+  background: rgba(26, 26, 26,0.96);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(26, 26, 26, 0.5);
@@ -26,6 +26,16 @@
       width: 180px;
       height: 40px;
     }
+    @media screen and (max-width: 1200px) {
+      width: 80px;
+      height: 60px;
+    }
+    @media screen and (max-width: 900px) {
+      width: 70px;
+      height: 50px;
+      margin: 1rem;
+      margin-left: 3rem;
+    }
   }
 }
 
@@ -41,7 +51,7 @@
     justify-content: center;
     align-items: center;
     list-style: none;
-    width: 70%;
+    width: 45%;
 
     li {
       margin: 0 1rem;
@@ -58,6 +68,7 @@
       }
       a {
         color: #E6E6E6;
+        font-family: var(--font-base);
         text-decoration: none;
         flex-direction: column;
         text-transform: uppercase;
@@ -82,7 +93,7 @@
 }
 
 .app__navbar-menu {
-  width: 35px;
+  width: 40px;
   height: 35px;
   border-radius: 50%;
   position: relative;
@@ -117,7 +128,7 @@
     flex-direction: column;
     
     background: url('../../assets/bgWhite.png');
-    background-color: var(--white-color);
+    background-color: #363636;
     background-size: cover;
     background-repeat: repeat;
 
@@ -147,17 +158,14 @@
         margin: 1rem;
 
         a {
-          color: var(--gray-color);
+          font-family: var(--font-base);
+          color: var(--secondary-color);
           text-decoration: none;
           font-size: 1rem;
           text-transform: uppercase;
           font-weight: 500;
 
           transition: all 0.3s ease-in-out;
-
-          &:hover {
-            color: var(--secondary-color);
-          }
         }
       }
     }
@@ -169,5 +177,30 @@
 
   @media screen and (min-width: 900px) {
     display: none;
+  }
+}
+
+.app__button-group {
+  margin:0;
+  padding:0;
+  margin-right: 2rem;
+  button {
+      background-color: #E6E6E6;;
+      border-radius: 10px;
+      box-shadow: 0px 0px 20px var(--secondary-color);
+      font-family: var(--font-base);
+      color: var(--secondary-color);
+      font-size: 0.9rem;
+      border: none;
+      padding: 8px 15px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 0 10px #3944c2d3;
+
+      &:hover {
+      background-color: var(--secondary-color);
+      color: #E6E6E6;
+      box-shadow: 0 0 20px #3944c2d3; 
+      }
   }
 }
