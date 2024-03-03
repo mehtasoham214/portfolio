@@ -3,7 +3,7 @@ import './Works.scss'
 const works = () => {
   return (
     <div>
-      
+      Works
     </div>
   )
 }

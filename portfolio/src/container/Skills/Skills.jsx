@@ -3,7 +3,7 @@ import './Skills.scss'
 const skills = () => {
   return (
     <div>
-      
+      Skills
     </div>
   )
 }
