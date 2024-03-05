@@ -23,7 +23,7 @@ const Navbar = () => {
       </div>
       <div className="app__navbar-container">
         <ul className="app__navbar-links">
-          {['home', 'about', 'work', 'skills', 'contact'].map((item) => (
+          {['home', 'about', 'skills', 'experience','projects', 'contact'].map((item) => (
             <li className="app__flex p-text" key={`link-${item}`}>
               <div />
               <a href={`#${item}`}>{item}</a>
@@ -31,8 +31,8 @@ const Navbar = () => {
           ))}
         </ul>
         <div className='app__button-group'>
-        <button onClick={handleDownloadResume}>Download Resume</button>
-      </div>
+          <button onClick={handleDownloadResume}>Download Resume</button>
+        </div>
       </div>
 
       <div className="app__navbar-menu">
@@ -42,10 +42,13 @@ const Navbar = () => {
           <motion.div
             whileInView={{ x: [300, 0] }}
             transition={{ duration: 0.85, ease: 'easeOut' }}
+            className='menu-list'
           >
-            <HiX onClick={() => setToggle(false)} />
+            <div className="svg-display">
+              <HiX className="menu-close" onClick={() => setToggle(false)} />
+            </div>
             <ul>
-              {['home', 'about', 'work', 'skills', 'contact'].map((item) => (
+              {['home', 'about', 'skills', 'experience','projects', 'contact'].map((item) => (
                 <li key={item}>
                   <a href={`#${item}`} onClick={() => setToggle(false)}>
                     {item}
@@ -53,11 +56,11 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
+            <div className='app__button-group'>
+              <button onClick={handleDownloadResume}>Download Resume</button>
+            </div>
           </motion.div>
         )}
-        <div className='app__button-group'>
-          <button onClick={handleDownloadResume}>Download Resume</button>
-        </div>
       </div>
     </nav>
   );

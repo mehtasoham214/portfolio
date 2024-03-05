@@ -14,13 +14,13 @@
 
 .app__navbar-logo {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-center;
+  align-items: flex-center;
   width: 20%;
 
   img {
-    width: 115px;
-    height: 95px;
+    width: 105px;
+    height: 85px;
 
     @media screen and (min-width: 2000px) {
       width: 180px;
@@ -39,25 +39,22 @@
   }
 }
 
+//Laptop Menu
 .app__navbar-container {
   display: flex;
-  justify-content: end;
-  align-items: end;
+  justify-content: flex-end;
+  align-items: center;
   width: 80%;
-
   .app__navbar-links {
-    
     display: flex;
     justify-content: center;
     align-items: center;
     list-style: none;
-    width: 45%;
-
+    width: 50%;
     li {
       margin: 0 1rem;
       cursor: pointer;
       flex-direction: column;
-
       div {
         width: 5px;
         height: 5px;
@@ -78,23 +75,21 @@
           color: var(--secondary-color);
         }
       }
-
       &:hover {
         div {
           background: var(--secondary-color);
         }
       }
     }
-
-    @media screen and (max-width: 900px) {
-      display: none;
-    }
+  }
+  @media screen and (max-width: 900px) {
+    display: none;
   }
 }
-
+//Mobile Menu
 .app__navbar-menu {
   width: 40px;
-  height: 35px;
+  height: 38px;
   border-radius: 50%;
   position: relative;
   margin-right: 1.5rem;
@@ -102,58 +97,56 @@
   justify-content: center;
   align-items: center;
   background-color: var(--secondary-color);
-
-
   svg {
     width: 70%;
     height: 70%;
     color: var(--white-color);
   }
-
-  div {
+  .menu-close{
+    fill: var(--white-color);
+    border-radius : 50%;
+    background-color: var(--secondary-color);
+  }
+  .menu-list {
     position: fixed;
     top: 0;
     bottom: 0;
     right: 0;
     z-index: 5;
-
     padding: 1rem;
-
     width: 80%;
     height: 100vh;
-    
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
-    
     background: url('../../assets/bgWhite.png');
     background-color: #363636;
     background-size: cover;
     background-repeat: repeat;
-
-    /* top box shadow */
     box-shadow: 0px 0px 20px rgba(168, 168, 168, 0.15);
-
-    svg {
-      width: 35px;
-      height: 35px;
-      color: var(--secondary-color);
-      margin: 0.5rem 1rem;
+    .svg-display{
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;  
+      svg {
+        width: 35px;
+        height: 35px;
+        color: var(--secondary-color);
+        margin: 0.5rem 1rem;
+        align-content: right;
+      }
     }
-
     ul {
       list-style: none;
       margin: 0;
       padding: 0;
-      height: 100%;
+      height: auto;
       width: 100%;
-
       display: flex;
       justify-content: flex-start;
       align-items: flex-start;
       flex-direction: column;
-
       li {
         margin: 1rem;
 
@@ -164,8 +157,7 @@
           font-size: 1rem;
           text-transform: uppercase;
           font-weight: 500;
-
-          transition: all 0.3s ease-in-out;
+          transition: all 0.6s ease-in-out;
         }
       }
     }
@@ -180,14 +172,15 @@
   }
 }
 
+//Button
+$sec-color: (#3944c2d3);
 .app__button-group {
   margin:0;
   padding:0;
   margin-right: 2rem;
   button {
-      background-color: #E6E6E6;;
+      background-color: var(--white-color);
       border-radius: 10px;
-      box-shadow: 0px 0px 20px var(--secondary-color);
       font-family: var(--font-base);
       color: var(--secondary-color);
       font-size: 0.9rem;
@@ -195,12 +188,24 @@
       padding: 8px 15px;
       cursor: pointer;
       transition: background-color 0.3s ease, box-shadow 0.3s ease;
-      box-shadow: 0 0 10px #3944c2d3;
-
+      box-shadow: 0 0 10px $sec-color;
       &:hover {
       background-color: var(--secondary-color);
-      color: #E6E6E6;
-      box-shadow: 0 0 20px #3944c2d3; 
+      color: var(--white-color);
+      box-shadow: 0 0 20px $sec-color; 
       }
+      @media screen and (max-width: 900px) {
+        margin-top: 1rem;
+        margin-left: 0.8rem;
+        font-size: 0.9rem;
+        border: none;
+        padding: 6px 12px;
+      }
+  }
+  @media screen and (max-width: 900px) {
+    display: flex;
+    justify-content: flex-center;
+    align-items: flex-center;
+    width: 100%;
   }
 }

@@ -1,0 +1,112 @@
+#about {
+    position: relative;
+    .app__wrapper {
+        padding: 0;
+        .copyright {
+            display: none;
+        }
+    }
+}
+.app__about {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+}
+.about-profile
+{
+    font-family: var(--font-base);
+    color: var(--white-color);
+    padding-top: 60px;
+    flex: 1;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    h2, h3, p{
+        text-align: center;
+        padding: 0 5px 0 5px;
+    }
+    h1{
+        text-align: center;
+    }
+    h2{
+        font-weight: 545;;
+    }
+    h3{
+        font-weight: 450;
+    }
+    .profile-heading{
+        padding: 20px;
+        padding-bottom: 10px;
+        width: 60%;
+        display: flex;
+        justify-content: center;
+    }
+    .profile-text{
+        padding-top: 0px;
+    }
+    @media screen and (max-width: 900px) {
+        padding-top:0px;
+    }
+    .app__profile {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .head-text{
+        text-transform: uppercase;
+        span{
+            color: var(--secondary-color);
+        }
+    }
+
+    .app__profile-item {
+        width: 25%;
+        height: 350px;
+        margin: 2rem;
+        background-color: #3636367f;
+        box-shadow: 0px 0px 5px #3636367f;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .profile-wrap{
+            width: 100%;
+            padding-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .about-text{
+                max-height: 30%;
+            }
+            .img-holder{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    width: 65%;
+                    height: 65%;
+                    border-radius: 15px;
+                    object-fit: contain;
+                    color:var(--secondary-color);
+                }
+            }
+        }
+        &:hover{
+            box-shadow: 0px 0px 20px var(--white-color);
+        }
+        @media screen and (max-width: 645px) {
+            width: 100%;
+            margin: 1rem;
+        }
+        @media screen and (min-width: 646px) and (max-width: 900px) {
+            width: 50%;
+            margin: 2rem;
+        }
+    }
+}

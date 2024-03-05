@@ -2,13 +2,13 @@
 
 :root {
     --font-base: 'Poppins', sans-serif;
-    --primary-color: #edf2f8;
+    --primary-color: #1A1A1A;
     --secondary-color: #3945c2;
     --black-color: #030303;
     --lightGray-color: #e4e4e4;
-    --gray-color: #6b7688;
-    --brown-color: #46364a;
-    --white-color: #ffffff;
+    --gray-color: #363636;
+    --brown-color: #B5734C;
+    --white-color: #E6E6E6;
 }
 
 * {

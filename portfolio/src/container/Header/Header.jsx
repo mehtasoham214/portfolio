@@ -3,9 +3,10 @@ import { motion } from 'framer-motion';
 import { images } from '../../constants';
 import { TypeAnimation } from "react-type-animation";
 import './Header.scss';
+import {AppWrap} from '../../wrapper';
 
 //Icons
-import { FaGithub, FaLinkedin, FaSquareGithub} from "react-icons/fa6"
+import { FaLinkedin, FaSquareGithub} from "react-icons/fa6"
 import { TbBrandGmail } from "react-icons/tb";
 
 const scaleVariants = {
@@ -100,9 +101,9 @@ const Header = () => (
       {icons.map((icon, index) => (
         <div className="circle-cmp app__flex" key={index}>
           {
-            index % 3 === 0 ? <FaLinkedin size={60} color='rgba(230, 230, 230, 0.89)' /> :
-            index % 3 === 1 ? <FaSquareGithub size={80} color='rgba(230, 230, 230, 0.89)' /> :
-            <TbBrandGmail size={40} color='rgba(230, 230, 230, 0.89)' />
+            index % 3 === 0 ? <a href="https://www.linkedin.com/in/mehtasoham214/" target="_blank" rel="noreferrer"><FaLinkedin color='rgba(230, 230, 230, 0.89)' /></a> :
+            index % 3 === 1 ? <a href="https://github.com/mehtasoham214" target="_blank" rel="noreferrer"><FaSquareGithub color='rgba(230, 230, 230, 0.89)' /></a> :
+            <a href="mailto:mehtasoham214@gmail.com" target="_blank" rel="noreferrer"><TbBrandGmail color='rgba(230, 230, 230, 0.89)' /></a>
           }
         </div>
       ))}
@@ -110,4 +111,4 @@ const Header = () => (
   </div>
 );
 
-export default Header;
+export default AppWrap(Header, 'home');

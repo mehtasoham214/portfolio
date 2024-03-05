@@ -2,7 +2,6 @@
     background-color: var(--primary-color);
     font-family: var(--font-base);
 }
-
 .app__whitebg {
     background-color: var(--white-color);
 }
@@ -19,8 +18,8 @@
 
 .app__flex {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-center;
+    align-items: flex-center;
 }
 .app__wrapper {
     flex: 1;
@@ -41,7 +40,7 @@
     align-items: flex-end;
     p {
         text-transform: uppercase;
-        color: var(--black-color);
+        color: var(--white-color);
     }
 }
 .head-text {
@@ -84,7 +83,7 @@
 .app__social {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-center;
     flex-direction: column;
     padding: 1rem;
     div {
@@ -96,8 +95,8 @@
         border: 1px solid var(--lightGray-color);
 
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-center;
+        align-items: flex-center;
 
         transition: all 0.3s ease-in-out;
 
@@ -126,15 +125,15 @@
 }
 .app__navigation {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-center;
+    align-items: flex-center;
     flex-direction: column;
     padding: 1rem;
     .app__navigation-dot {
         width: 10px;
         height: 10px;
         border-radius: 50%;
-        background-color: #cbcbcb;
+        background-color: #E6E6E6;
         margin: 0.5rem;
         transition: background-color 0.2s ease-in-out;
         &:hover {
