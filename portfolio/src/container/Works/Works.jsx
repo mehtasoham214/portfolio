@@ -3,7 +3,11 @@ import './Works.scss'
 const works = () => {
   return (
     <div>
-      Works
+      <a
+        href='google.com'
+      >
+        ◕‿‿◕
+      </a>
     </div>
   )
 }

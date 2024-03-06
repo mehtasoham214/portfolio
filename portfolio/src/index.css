@@ -17,3 +17,23 @@
     margin: 0;
     scroll-behavior: smooth;
 }
+::-webkit-scrollbar {
+    width: 10px;
+}
+  /* Track */
+::-webkit-scrollbar-track {
+    background: var(--primary-color);
+    box-shadow: inset 0 0 5px var(--primary-color); 
+    opacity: 0.2;
+}
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--secondary-color);
+    border-radius: 5px;
+}
+
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--gray-color);
+    box-shadow: inset 0 0 10px var(--secondary-color); 
+}

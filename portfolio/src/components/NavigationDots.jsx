@@ -1,5 +1,11 @@
 import React from 'react'
-
+function scrollToSection(event, item) {
+    event.preventDefault();
+    const section = document.getElementById(item);
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
+}
 const NavigationDots = ({active}) => (
         <div className='navigation-dots'>
             <div className="app__navigation-dots">
@@ -9,6 +15,7 @@ const NavigationDots = ({active}) => (
                     key={item + index}
                     className="app__navigation-dot"
                     style={active === item ? { backgroundColor: '#313BAC' } : {}}
+                    onClick={(event) => scrollToSection(event, item)}
                 > </a>
             ))}
             </div>

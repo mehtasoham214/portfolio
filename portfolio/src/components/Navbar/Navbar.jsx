@@ -16,6 +16,13 @@ const Navbar = () => {
     link.click();
     document.body.removeChild(link);
   };
+  function scrollToSection(event, item) {
+    event.preventDefault();
+    const section = document.getElementById(item);
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
@@ -26,7 +33,7 @@ const Navbar = () => {
           {['home', 'about', 'skills', 'experience','projects', 'contact'].map((item) => (
             <li className="app__flex p-text" key={`link-${item}`}>
               <div />
-              <a href={`#${item}`}>{item}</a>
+              <a href={`#${item}`} onClick={(event) => scrollToSection(event, item)}>{item}</a>
             </li>
           ))}
         </ul>
