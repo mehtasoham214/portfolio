@@ -9,7 +9,7 @@ function scrollToSection(event, item) {
 const NavigationDots = ({active}) => (
         <div className='navigation-dots'>
             <div className="app__navigation-dots">
-            {['home', 'about', 'skills', 'experience','projects', 'contact'].map((item, index) => (
+            {['home', 'about', 'skills', 'experience', 'contact'].map((item, index) => (
                 <a
                     href={`#${item}`}
                     key={item + index}

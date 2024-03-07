@@ -1,5 +1,5 @@
 import React from "react";
-import { About, Footer, Header, Skills, Experience, Works } from "./container";
+import { About, Contact, Header, Skills, Experience } from "./container";
 import { Navbar } from "./components";
 import { HashLoader } from "react-spinners";
 import { useState, useEffect } from "react";
@@ -45,8 +45,7 @@ const App = () => {
                     <About />
                     <Skills />
                     <Experience />
-                    <Works />
-                    <Footer />
+                    <Contact />
                 </div>
             )}
         </>

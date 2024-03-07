@@ -1,4 +1,4 @@
-# <img src="./portfolio/public/images/SM_Logo.png" alt="HTML Icon" width="50px"> <br>Portfolio
+# <img src="./portfolio/public/logo.png" alt="HTML Icon" width="50px"> <br>Portfolio
 
 Explore my portfolio showcasing career milestones and achievements. The portfolio is a single-page application (SPA) that is responsive and mobile-friendly.
 
@@ -30,10 +30,6 @@ Thank you for your patience.
     </tr>
     <tr>
         <td align="center">
-            <img src="https://1000logos.net/wp-content/uploads/2020/08/MongoDB-Logo.png" alt="MongoDB Icon" width="50px">
-            <br>MongoDB
-        </td>
-        <td align="center">
             <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node.js Icon" width="50px">
             <br>Node.js
         </td>
@@ -44,12 +40,6 @@ Thank you for your patience.
         <td align="center">
             <img src="https://www.boardinfinity.com/blog/content/images/2023/01/Mern.png" alt="MERN Stack Icon" width="50px">
             <br>MERN Stack
-        </td>
-    </tr>
-    <tr>
-        <td align="center">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Sanity-logo-svg.svg/250px-Sanity-logo-svg.svg.png" alt="MongoDB Icon" width="50px">
-            <br>Sanity.io
         </td>
         <td align="center">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/800px-Sass_Logo_Color.svg.png" alt="Node.js Icon" width="50px">
