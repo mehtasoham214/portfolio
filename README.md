@@ -1,4 +1,4 @@
-# <img src="./portfolio/public/logo.png" alt="HTML Icon" width="50px"> <br>Portfolio
+# <img src="https://github.com/mehtasoham214/portfolio/blob/main/public/logo.svg" alt="HTML Icon" width="50px"> <br>Portfolio
 
 Explore my portfolio showcasing career milestones and achievements. The portfolio is a single-page application (SPA) that is responsive and mobile-friendly.
 
