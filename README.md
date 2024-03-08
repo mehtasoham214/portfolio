@@ -5,7 +5,7 @@ Explore my portfolio showcasing career milestones and achievements. The portfoli
 
 This is a dynamic website that is built using React and will allow me to showcase my work and achievements.
 
-### <a href="soham.mehta.me"> Visit Website </a>
+###  <a href="soham.mehta.me" target="_blank"> Visit Website </a>
 
 ## Technologies used
 
