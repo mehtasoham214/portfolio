@@ -125,7 +125,7 @@ const Experience = () => {
                 {item.name === 'To know More...' && (
                   <>
                     <motion.a 
-                    href="https://www.coursera.org/account/accomplishments/certificate/4WZ5KQK3J3XK"
+                    href="https://www.linkedin.com/in/mehtasoham214/details/certifications/"
                     whileInView={{opacity: 1}}
                     whileHover={{scale: 1.2}}
                     transition={{duration: 0.5, type:'tween'}}
@@ -139,7 +139,7 @@ const Experience = () => {
                     </button>
                   </motion.a>
                   <motion.a 
-                    href="https://www.linkedin.com/in/mehtasoham214/details/certifications/"
+                    href="https://www.linkedin.com/in/mehtasoham214/details/publications/"
                     whileInView={{opacity: 1}}
                     whileHover={{scale: 1.2}}
                     transition={{duration: 0.5, type:'tween'}}
@@ -149,7 +149,7 @@ const Experience = () => {
                     style={{marginTop: '1%'}}
                   >
                     <button>
-                      View Certificate
+                      View Publication
                     </button>
                   </motion.a>
                   </>

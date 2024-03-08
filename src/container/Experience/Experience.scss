@@ -42,6 +42,9 @@
             margin-right: 1%;
             border-radius: 0.75rem;
             box-shadow: 0 0 10px 0 var(--gray-color);
+            &:hover{
+                box-shadow: 0 0 10px 0 var(--secondary-color);
+            }
             .heading{
                 box-shadow: 0 0 10px 0 var(--primary-color);
             }
@@ -92,7 +95,7 @@
             }
             @media screen and (max-width: 900px) {
                 width:100%;
-                margin-top: 50px
+                margin-top: 50px;
             }
         }
         @media screen and (max-width: 900px) {
@@ -126,6 +129,6 @@
     }
     @media screen and (max-width: 900px) {
         width: 100%;
-        margin-top:60%;
+        margin-top:10%;
     }
 }

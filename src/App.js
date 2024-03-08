@@ -5,7 +5,8 @@ import { HashLoader } from "react-spinners";
 import { useState, useEffect } from "react";
 import "./App.scss";
 import { motion } from "framer-motion";
-
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const override = {
     display: "block",
     margin: "0 auto",
@@ -46,6 +47,7 @@ const App = () => {
                     <Skills />
                     <Experience />
                     <Contact />
+                    <ToastContainer />
                 </div>
             )}
         </>
