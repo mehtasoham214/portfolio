@@ -28,7 +28,7 @@ const Experience = () => {
       data:[
         {name: 'Portfolio', techStack: ['React','Framer Motion','Bootstrap','SCSS'], githubLink:'https://github.com/mehtasoham214/portfolio'},
         {name: 'Solar Management System', techStack: ['React','Mongo DB','Node.js','Express.js', 'Agile'], githubLink:'https://github.com/mehtasoham214/Solar_Management'},
-        {name: 'To know More...', techStack: ['View GitHub, Certificate, Publication'], githubLink:'https://github.com/mehtasoham214/Solar_Managemen'}
+        {name: 'To know More...', techStack: ['View GitHub, Certificate, Publication'], githubLink:'https://github.com/mehtasoham214/'}
       ]
     }
   ];
