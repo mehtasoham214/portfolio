@@ -1,11 +1,11 @@
 # <img src="https://github.com/mehtasoham214/portfolio/blob/main/public/logo.svg" alt="HTML Icon" width="50px"> <br>Portfolio
+Welcome! I'm a recent graduate with a Master's degree in Cybersecurity, eager to leverage my problem-solving skills and passion for technology to make a positive impact in the field. While I'm currently building my professional experience, I bring a strong foundation in web development and a relentless drive to learn and adapt. This website showcases my academic achievements, personal projects, and ongoing journey towards becoming a skilled cybersecurity professional. I'm excited to connect and explore opportunities to contribute my knowledge and enthusiasm to the ever-evolving world of cybersecurity.
 
 Explore my portfolio showcasing career milestones and achievements. The portfolio is a single-page application (SPA) that is responsive and mobile-friendly.
 
-This is a dynamic website that is built using the MERN stack and will allow me to showcase my work and achievements.
+This is a dynamic website that is built using React and will allow me to showcase my work and achievements.
 
-It is currently being buit and will be deployed soon.
-Thank you for your patience.
+### <a href="soham.mehta.me"> Visit Website </a>
 
 ## Technologies used
 
