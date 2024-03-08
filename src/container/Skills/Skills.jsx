@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{ useState } from 'react'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { motion } from 'framer-motion';
 import { images } from '../../constants';
@@ -67,6 +67,11 @@ const Skills = () => {
       imgdesc:[]
     },
   ];
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <div className="app__skills">
       <div className="skill-heading">
@@ -87,6 +92,20 @@ const Skills = () => {
               <Tab key={`skill-${index}`} className="skills-tab">{item.title}</Tab>
             ))}
           </TabList>
+          <div className="mobile-dropdown">
+            <button className="dropdown-toggle" onClick={toggleDropdown}>
+              Choose Skill
+            </button>
+            {isOpen && (
+              <TabList className='dropdown-content'>
+                {skillsList.map((item, index) => (
+                  <Tab key={`skill-${index}`} className="dropdown-item" onClick={toggleDropdown}>
+                    {item.title}
+                  </Tab>
+                ))}
+              </TabList>
+            )}
+          </div>
           {/* Images panel */}
           <div className="img-panel">
             {skillsList.map((item, index) => (

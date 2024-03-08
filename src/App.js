@@ -39,7 +39,7 @@ const App = () => {
                     </motion.div>
                 </div>
             ) : (
-                <div>
+                <div className="app__home">
                     <Navbar />
                     <Header />
                     <About />

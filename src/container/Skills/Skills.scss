@@ -38,21 +38,41 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        ul{
+        .skills-tablist{
             list-style: none;
             display: flex;
+            justify-content: center;
             align-items: center;
-            flex-wrap: wrap;
-            li {
+            border-radius: 0.75rem;
+            border: 1px solid var(--white-color);
+            background-color: var(--gray-color);
+            border-bottom: 1px solid;
+            padding: 8px 16px;
+            margin-bottom: 1rem;
+            .skills-tab {
                 cursor: pointer;
                 position: relative;
+                padding: 8px 16px;
+                outline: none;
+                border-radius: 0.75rem;
+                margin-right: 0.75rem;
                 &:hover {
                     text-shadow: 0 0 20px var(--secondary-color);
                 }
-                @media screen and (max-width: 450px) {
+                .skills-tab.react-tabs__tab--selected {
+                    background-color: var(--primary-color);
+                    color: var(--secondary-color);
+                    border: 2px solid var(--secondary-color);
+                    box-shadow: 0 0 0 1px var(--white-color);
+                }
+                @media screen and (max-width: 700px) {
                     text-align: center;
                     width: 100%;
+                    display: none;
                 }
+            }
+            @media screen and (max-width: 700px) {
+                display: none;
             }
         }
         .skills-tabs{
@@ -65,41 +85,27 @@
                 border-radius: 0.75rem;
                 padding: 3rem 3rem 0rem 3rem;
                 height: 100%;
-                width: 80vw;
+                width: 100%;
                 skills-panel{
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     height: 100%;
                 }
+                @media screen and (max-width: 900px) {
+                    padding: 0rem;
+                }
             }
-            .skills-tablist{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border-radius: 0.75rem;
-                border: 1px solid var(--white-color);
-                background-color: var(--gray-color);
-                border-bottom: 1px solid;
-                padding: 8px 16px;
-                margin-bottom: 1rem;
-                .skills-tab{
-                    padding: 8px 16px;
-                    outline: none;
-                    border-radius: 0.75rem;
-                    margin-right: 0.75rem;
-                }
-                .skills-tab.react-tabs__tab--selected {
-                    background-color: var(--primary-color);
-                    color: var(--secondary-color);
-                    border: 2px solid var(--secondary-color);
-                    box-shadow: 0 0 0 1px var(--white-color);
-                }
+            @media screen and (max-width: 700px) {
+                margin-top: 2rem;
             }
         }
         @media screen and (max-width: 900px) {
             width: 100%;
         }
+    }
+    @media screen and (max-width: 900px) {
+        width: 100%;
     }
 }
 .image-container{
@@ -126,9 +132,61 @@
             height: 60%;
         }
         @media screen and (max-width: 900px) {
-            width: 60px;
-            height: 60px;
+            width: 30px;
+            height: 30px;
             margin-top: 1rem;
         }
+    }
+}
+.dropdown-content{
+    
+    background-color: var(--primary-color);
+    
+}
+// Dropdown button
+.dropdown-toggle {
+    background-color: var(--gray-color);
+    border: none;
+    color: var(--white-color);
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    &:hover {
+        background-color: var(--primary-color);
+    }
+}
+
+  // Dropdown content (hidden by default)
+.dropdown-content {
+    display:block;
+    position:inherit;
+    box-shadow: 0px 2px 2px 0px var(--secondary-color);
+    z-index: 5;
+    right: 10px;
+    border-radius: 0.75rem;
+    border: 1px solid var(--white-color);
+    background-color: #36363675;
+}
+
+.dropdown-item {
+    color: var(--white-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+
+    &:hover {
+        background-color: #f1f1f1;
+    }
+}
+
+  // Show the dropdown menu on hover
+.mobile-dropdown{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: 700px) {
+        display: none;
+        
     }
 }

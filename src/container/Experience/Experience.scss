@@ -20,6 +20,9 @@
     .app_experience-section{
         height: 20%;
         justify-content: start;
+        @media screen and (max-width: 900px) {
+            height: 15%;
+        }
     }
 
     .experience-sections{
@@ -79,9 +82,22 @@
                             color: var(--primary-color);
                             text-shadow: 0 0 10px var(--secondary-color);
                         }
+                        @media screen and (max-width: 900px) {
+                            padding: 2px 7px 2px 7px;
+                            margin-right: 5px;
+                            font-size: 0.70rem;
+                        }
                     }
                 }
             }
+            @media screen and (max-width: 900px) {
+                width:100%;
+                margin-top: 50px
+            }
+        }
+        @media screen and (max-width: 900px) {
+            flex-direction: column;
+            width:100%;
         }
     }
     .experience-heading{
@@ -107,5 +123,9 @@
                 color: var(--secondary-color);
             }
         }
+    }
+    @media screen and (max-width: 900px) {
+        width: 100%;
+        margin-top:60%;
     }
 }

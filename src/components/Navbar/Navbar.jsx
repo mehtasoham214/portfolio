@@ -30,7 +30,7 @@ const Navbar = () => {
       </div>
       <div className="app__navbar-container">
         <ul className="app__navbar-links">
-          {['home', 'about', 'skills', 'experience','projects', 'contact'].map((item) => (
+          {['home', 'about', 'skills', 'experience', 'contact'].map((item) => (
             <li className="app__flex p-text" key={`link-${item}`}>
               <div />
               <a href={`#${item}`} onClick={(event) => scrollToSection(event, item)}>{item}</a>
@@ -55,7 +55,7 @@ const Navbar = () => {
               <HiX className="menu-close" onClick={() => setToggle(false)} />
             </div>
             <ul>
-              {['home', 'about', 'skills', 'experience','projects', 'contact'].map((item) => (
+              {['home', 'about', 'skills', 'experience', 'contact'].map((item) => (
                 <li key={item}>
                   <a href={`#${item}`} onClick={() => setToggle(false)}>
                     {item}

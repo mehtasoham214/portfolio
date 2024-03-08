@@ -9,8 +9,9 @@
     align-items: center;
     color: var(--white-color);
     font-family: var(--font-base);
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 900px) {
         flex-direction: column;
+        padding-top:100px;
     }
 }
 .app__Contact-form {
