@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.69f5b937.css",
+    "main.js": "/portfolio/static/js/main.45eea409.js",
+    "static/media/mean.svg": "/portfolio/static/media/mean.ebed2a8ccab4f04ba3c1595f1cb73298.svg",
+    "static/media/profile.svg": "/portfolio/static/media/profile.a30223cd84de4c6d460b5ea3664e6af3.svg",
+    "static/media/diskdrill.svg": "/portfolio/static/media/diskdrill.c89dd45eda611e87e92b7f6210d5164c.svg",
+    "static/media/bgWhite.png": "/portfolio/static/media/bgWhite.79658cadae50b3b16ee5.png",
+    "static/media/mern.svg": "/portfolio/static/media/mern.3d43ce631ebf23f93f851310995c0293.svg",
+    "static/media/Soham_Mehta_Resume.pdf": "/portfolio/static/media/Soham_Mehta_Resume.21f0e0555889de0e397a.pdf",
+    "static/media/autospy.svg": "/portfolio/static/media/autospy.b6f26a9edcd237f19e03f84eb3910eef.svg",
+    "static/media/nessus.svg": "/portfolio/static/media/nessus.0345ea05ce8fba27850e6dc676e9a43b.svg",
+    "static/media/kanban.svg": "/portfolio/static/media/kanban.7661490665fd9e51b464bbafbb8285a2.svg",
+    "static/media/burp.svg": "/portfolio/static/media/burp.541d0d7c93bd6d3fd70f803d8a0d28ab.svg",
+    "static/media/logo.svg": "/portfolio/static/media/logo.ef5a7d3fba5e78b3cb9b2f3871ffcd23.svg",
+    "static/media/email.png": "/portfolio/static/media/email.37b9e890eea501421fbf.png",
+    "static/media/about02.svg": "/portfolio/static/media/about02.99e5f535588214e779f37d10474d7726.svg",
+    "static/media/about03.svg": "/portfolio/static/media/about03.50cfbb9d69b2b9e37c26bba376c8a191.svg",
+    "static/media/about01.svg": "/portfolio/static/media/about01.edee74615df240543c487efa281ef4bf.svg",
+    "static/media/agile.svg": "/portfolio/static/media/agile.72addc906b9e42f257a8765e9d33a818.svg",
+    "static/media/scrum.svg": "/portfolio/static/media/scrum.091ede5c5d0daf65b4315c357aa7865d.svg",
+    "index.html": "/portfolio/index.html",
+    "static/media/circle.svg": "/portfolio/static/media/circle.ba033da8eb03d51cc562eae63a8f100a.svg",
+    "main.69f5b937.css.map": "/portfolio/static/css/main.69f5b937.css.map",
+    "main.45eea409.js.map": "/portfolio/static/js/main.45eea409.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.69f5b937.css",
+    "static/js/main.45eea409.js"
+  ]
+}
