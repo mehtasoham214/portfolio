@@ -1,6 +1,3 @@
-import email from "../assets/email.png";
-import api from "../assets/api.png";
-
 import about01 from "../assets/about01.svg";
 import about02 from "../assets/about02.svg";
 import about03 from "../assets/about03.svg";
@@ -21,8 +18,6 @@ import mean from "../assets/mean.svg";
 import mern from "../assets/mern.svg";
 
 const imagesHolder = {
-    email,
-    api,
     about01,
     about02,
     about03,

@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Experience.scss"
-import { AppWrap } from "../../wrapper"
+import { AppWrap,Tooltip } from "../../wrapper"
 import {motion} from 'framer-motion'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -18,9 +18,9 @@ const Experience = () => {
     {
       title: 'Experience', 
       data:[
-        {name: 'Unnati Institute', title:'Web Developer', duration:'Jan 2023 - May 2023'},
-        {name: 'I2E Consulting Pvt Ltd', title:'Web Developer Intern', duration:'Aug 2021 - Dec 2021'},
-        {name: 'Shah and Anchor Kutchhi Engineering College', title:'Web Developer', duration:'Dec 2019 - Mar 2020'}, 
+        {name: 'Unnati Institute', title:'Web Developer',desc:'Build a website for a small scale institute using Wix' ,duration:'Jan 2023 - May 2023'},
+        {name: 'I2E Consulting Pvt Ltd', title:'Web Developer Intern', desc:`Collaborated on the creation of the Internal Recognition Platform "Pats!" using React, PHP, and JavaScript, boosting peer-to-peer recognition. Additionally, development of newsletters with Microsoft Dynamics, increasing stakeholder engagement, and contributed to improving client websites with WordPress and React, enhancing functionality. Moreover, I revitalized the Official I2E website, resulting in a 25% increase in traffic and a 10% boost in user interaction through implemented blogs and forms.`, duration:'Aug 2021 - Dec 2021'},
+        {name: 'Shah and Anchor Kutchhi Engineering College', title:'Web Developer', desc:`Led a team of 6, overseeing error debugging, efficiency improvements, and providing feedback on their work. Designed and developed a Feedback Management System for our college, enabling students to give feedback to professors. Additionally, implemented updates to the website and its file system, enhancing modularity, efficiency, and reducing maintenance costs. Furthermore, created a database for feedback statistical analysis, updated forms using PHP, HTML, Ajax, SQL, and integrated Google Charts for visualization.`, duration:'Dec 2019 - Mar 2020'}, 
       ]
     },
     {
@@ -78,17 +78,19 @@ const Experience = () => {
             </h2>
           </Row>
           {allData[1].data.map((item, index) => (
-            <Row className="experiencesection-text text" key={index}>
-              <h3 className='head-text' style={{marginTop: '1%'}}>
-                {item.name}
-              </h3>
-              <p className='head-text' style={{marginTop: '1%'}}>
-                {item.title}
-              </p>
-              <p className='head-text' style={{marginTop: '1%'}}>
-                {item.duration}
-              </p>
-            </Row>
+            <Tooltip key={`tooltipBox-${index}`} text={item.desc}>
+              <Row className="experiencesection-text text" key={index}>
+                <h3 className='head-text' style={{marginTop: '1%'}}>
+                  {item.name}
+                </h3>
+                <p className='head-text' style={{marginTop: '1%'}}>
+                  {item.title}
+                </p>
+                <p className='head-text' style={{marginTop: '1%'}}>
+                  {item.duration}
+                </p>
+              </Row>
+            </Tooltip>
           ))}
         </Col>
         {/* Project */}
@@ -163,4 +165,4 @@ const Experience = () => {
   )
 }
 
-export default AppWrap(Experience, "experience")
+export default AppWrap(Experience, "experience");

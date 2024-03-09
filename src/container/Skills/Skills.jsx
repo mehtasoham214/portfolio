@@ -68,9 +68,13 @@ const Skills = () => {
     },
   ];
   const [isOpen, setIsOpen] = useState(false);
-
+  const [selectedSkill, setSelectedSkill] = useState(null);
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
+  };
+  const handleSkillSelect = (skill) => {
+    setSelectedSkill(skill);
+    toggleDropdown(); // close the dropdown after selecting a skill
   };
   return (
     <div className="app__skills">
@@ -94,12 +98,12 @@ const Skills = () => {
           </TabList>
           <div className="mobile-dropdown">
             <button className="dropdown-toggle" onClick={toggleDropdown}>
-              Choose Skill
+              {selectedSkill ? selectedSkill : 'Choose Skill'}
             </button>
             {isOpen && (
               <TabList className='dropdown-content'>
                 {skillsList.map((item, index) => (
-                  <Tab key={`skill-${index}`} className="dropdown-item" onClick={toggleDropdown}>
+                  <Tab key={`skill-${index}`} className="dropdown-item" onClick={() => handleSkillSelect(item.title)}>
                     {item.title}
                   </Tab>
                 ))}

@@ -31,8 +31,7 @@
         cursor: pointer;
         background-color: var(--primary-color);
         transition: all 0.3s ease-in-out;
-        input,
-        textarea {
+        input{
             resize: none;
             width: 70%;
             padding: 0.95rem;
@@ -46,6 +45,17 @@
         }
         textarea {
             height: 50px;
+            resize: none;
+            font-size: 0.8rem;
+            width: 70%;
+            padding: 0.95rem;
+            margin: 0 1rem 0 1rem;
+            border: none;
+            border-radius: 7px;
+            background-color: var(--primary-color);
+            font-family: var(--font-base);
+            color: var(--secondary-color);
+            outline: none;
         }
         &:hover {
             box-shadow: 0 0 25px var(--primary-color);

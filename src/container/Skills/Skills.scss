@@ -145,6 +145,8 @@
             width: 30px;
             height: 30px;
             margin-top: 0.5rem;
+            margin-right: 10px;
+            margin-bottom:10px;
         }
     }
     @media screen and (max-width: 900px) {
@@ -152,13 +154,27 @@
         height:220px
     }
 }
-
+.tooltip {
+    margin-right: 30px;
+    margin-bottom:50px;
+    .tooltiptext {
+        width: 100px;
+        top: 100%;
+        left: 50%;
+    }
+    @media screen and (max-width: 900px) {
+        margin-right: 0px;
+        margin-bottom:5px;
+    }
+}
 // Dropdown button
 .dropdown-toggle {
     background-color: var(--gray-color);
     border: none;
+    border-radius: 10px;
     color: var(--white-color);
     padding: 10px 20px;
+    margin-bottom: 1rem;
     font-size: 16px;
     cursor: pointer;
     &:hover {
