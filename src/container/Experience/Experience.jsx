@@ -12,7 +12,7 @@ const Experience = () => {
       data:[
         {name: 'Stevens Institute of Technology', degree: 'MSc', major:'CyberSecurity', duration:'Jan 2022 - Dec 2023'}, 
         {name: 'University of Mumbai', degree: 'BE', major:'Computer Engineering', duration:'Aug 2018 - June 2021'}, 
-        {name: `Shri Bhagubhai Mafatlal Ploytechnic`, degree: 'Diploma', major:'Computer Engineering', duration:'Aug 2014 - June 2018'}
+        {name: `SVKM's Shri Bhagubhai Mafatlal Polytechnic`, degree: 'Diploma', major:'Computer Engineering', duration:'Aug 2014 - June 2018'}
       ]
     },
     {

@@ -12,6 +12,9 @@
     @media screen and (max-width: 900px) {
         flex-direction: column;
         padding-top:100px;
+        .head-text {
+            text-align: center;
+        }
     }
 }
 .app__Contact-form {
