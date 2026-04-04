@@ -43,7 +43,7 @@ mehtasoham214.github.io/portfolio/
             <br>MERN Stack
         </td>
         <td align="center">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/800px-Sass_Logo_Color.svg.png" alt="Node.js Icon" width="50px">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1280px-Sass_Logo_Color.svg.png" alt="SCSS Icon" width="50px">
             <br>SCSS
         </td>
     </tr>
